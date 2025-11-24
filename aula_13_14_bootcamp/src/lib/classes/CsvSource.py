@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-from lib.FilesSources import FilesSources
+from lib.classes.FilesSources import FilesSources
 
 
 class CsvSource(FilesSources):
