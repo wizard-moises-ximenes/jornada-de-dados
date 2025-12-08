@@ -1,0 +1,17 @@
+[project]
+name = "aula-16-bootcamp"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "wizard-moises-ximenes",email = "moises.ximenes5@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "sqlmodel (>=0.0.27,<0.0.28)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
