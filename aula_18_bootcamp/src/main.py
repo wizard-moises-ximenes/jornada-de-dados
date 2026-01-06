@@ -1,6 +1,8 @@
-import time
 import random
-from controller import fetch_pokemon_data, add_pokemon_to_db
+import time
+
+from controller import add_pokemon_to_db, fetch_pokemon_data
+
 
 def main():
     while True:
@@ -12,6 +14,7 @@ def main():
         else:
             print(f"Não foi possível obter dados para o Pokémon com ID {pokemon_id}.")
         time.sleep(10)
+
 
 if __name__ == "__main__":
     main()

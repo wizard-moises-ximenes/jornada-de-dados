@@ -1,6 +1,7 @@
 import requests
 from pydantic import BaseModel
 
+
 def pegar_pokemon(id: int) -> PokemonSchame:
     response = requests.get(f"https://pokeapi.co/api/v2/pokemon/{id}")
     data = response.json()
@@ -11,6 +12,7 @@ def pegar_pokemon(id: int) -> PokemonSchame:
     types = ", ".join(types_list)
     pokemon = PokemonSchame(name=data["name"], type=types)
     return pokemon
+
 
 if __name__ == "__main__":
     print(pegar_pokemon(10))
